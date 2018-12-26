@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <!-- shout out to all these books that made this website possible!
+    
+    Using SVG with CSS3 & HTML 5 amelia bellamy-royds kut cagle & dudley storey you guys rock
+
+also just started on learning php, my sql javascript css and html third edition thats allot of stuff 
+
+webscrpaing with python by ryan mitchell ( o'reully). Copyright 2015 ryan mitchell, 978-1-491-91029-0!!!
+
+building progressive web apps with tal ater copyright 2017 tal ater , 978-149-196165-0
+
+building htnml5 games ... the one by apress... i should have written that one
+
+angular js up and running by shyam seshadri and brad green ( o rieldy). copyright 2014 shyan seshandri and brad green 978-1-491-90194-6 
+
+-->
+    <meta charset="UTF-8">
+    <title>Sosa Studios</title>
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="scripts/CoppeWeb.js"></script>
+    <script src="scripts/buildWeb.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+</script>
+
+
+</head>
+    
+    <!--this is the header stuff that im going to make hide on click using jquery-->
+    <h1>Sosa Animation Studios</h1>
+    <h2>Presents:</h2>
+    <h3>A Quiet patient spider</h3>
+
+<form id="searchform" method="post"
+        onsubmit="">
+    <svg height="320px" width="600px" 
+     preserveAspectRatio="xMinYMax meet"
+     aria-label="spider" role="img" >
+   <title>svg image of a friendly spider</title>
+
+   <style type="text/css">
+  </style>
+     <defs>
+        <!-- this is where the same the of classes go, and ids with labes. its like you try and use css>
+        gooddam why did you get high... -->
+
+
+    
+        <circle id="eyes" cy="155" r="48"/>
+    <title>the spiders eyes</title>
+        <circle id="minieyes" r="6" stroke="black" fill="grey" strokewidth="1"/>
+     <title>the spiders smaller eyes</title>
+       
+
+    </defs>
+    
+    
+         <g class="legs" stroke="green" stroke-width="6" fill="blue">
+    <!--rightside -->
+    <title>legs</title>
+        <path d="M 350,204
+                     c 60 -300, 50 -60,  20  5,
+                     q -10,40 -20,-5 z"/>
+    
+           <path d="M 380,74
+                     c 70 400, 60 100,  30  5,
+                     q -20,-40 -30,-5 z"/>
+    
+    <!-- leftside-->
+       <path d="M 250,204
+                     c -60 -300, -50 -60,  -20  5,
+                     q 10,40 20,-5 z"/>
+    
+           <path d="M 220,74
+                     c -70 400, -60 100,  -30  5,
+                     q 20,-40 30,-5 z"/>
+    
+            </g>
+      
+     <!--these are the big eyes that they live in-->
+         <polygon points="230,190 300,120 370,190" style="fill:lime;stroke:purple;stroke-width:8" />
+            <g stroke="black" stroke-width="2">
+            <use xlink:href="#eyes" x="250" fill="white"/>
+             <use xlink:href="#eyes" x="350" fill="white"/>
+            </g>
+
+            <!--left eye grid-->
+            <!--
+         <line x1="200" y1="155" x2="300" y2="155" style="stroke:rgb(255,255,0);stroke-width:2" />
+         <line x1="200" y1="170" x2="300" y2="170" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="200" y1="140" x2="300" y2="140" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="200" y1="185" x2="300" y2="185" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="200" y1="125" x2="300" y2="125" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="200" y1="200" x2="300" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="200" y1="110" x2="300" y2="110" style="stroke:rgb(255,0,0);stroke-width:2" />
+
+         <line x1="200" y1="110" x2="200" y2="200" style="stroke:rgb(255,255,0);stroke-width:2" />
+         <line x1="215" y1="110" x2="215" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="230" y1="110" x2="230" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="245" y1="110" x2="245" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="260" y1="110" x2="260" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="275" y1="110" x2="275" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+         <line x1="290" y1="110" x2="290" y2="110" style="stroke:rgb(255,0,0);stroke-width:2" />
+            -->
+<!-- eye right grid 
+            <line x1="400" y1="155" x2="300" y2="155" style="stroke:rgb(255,255,0);stroke-width:2" />
+            <line x1="400" y1="170" x2="300" y2="170" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="400" y1="140" x2="300" y2="140" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="400" y1="185" x2="300" y2="185" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="400" y1="125" x2="300" y2="125" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="400" y1="200" x2="300" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="400" y1="110" x2="300" y2="110" style="stroke:rgb(255,0,0);stroke-width:2" />
+   
+            <line x1="300" y1="110" x2="300" y2="200" style="stroke:rgb(255,255,0);stroke-width:2" />
+            <line x1="315" y1="110" x2="315" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="330" y1="110" x2="330" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="345" y1="110" x2="345" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="360" y1="110" x2="360" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="375" y1="110" x2="375" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="390" y1="110" x2="390" y2="110" style="stroke:rgb(255,0,0);stroke-width:2" />
+-->
+            <!-- these are the small eyes-->
+            <g>
+            
+                <!--this is the left side-->
+              <use xlink:href="#minieyes" x="250" y="177"/>
+              <use xlink:href="#minieyes" x="266" y="162"/>
+              <use xlink:href="#minieyes" x="230" y="169"/>
+              <use xlink:href="#minieyes" x="240" y="190"/>
+              <use xlink:href="#minieyes" x="272" y="182"/>
+  
+    
+              <!--this is the right side-->
+              <use xlink:href="#minieyes" x="365" y="165"/>   
+              <use xlink:href="#minieyes" x="337" y="170"/> 
+              <use xlink:href="#minieyes" x="355" y="180"/> 
+              <use xlink:href="#minieyes" x="375" y="185"/> 
+              <use xlink:href="#minieyes" x="342" y="192"/> 
+              
+          
+            </g>
+
+
+
+    <!--    this is the right pincer original
+            <g id="rightPincer" stroke="blue" stroke-width="4" fill="black">
+               
+                 <path d="M 320,204 
+                 a 25,10 0,0,1 80, 
+                 q -8,20 -80,0 z"/>
+                
+                </g>
+-->
+
+<!--this goes after the path in rightPincer if the other thing doesn't work   <animateMotion
+                     path="m-5 0 c3 -6, -13 -2, 15 0, 
+                     c -2,-3, 4 6, -15, 0"
+                     dur="3s" fill="freeze" repeatCount="indefinite"/> -->
+<!--geeze this animation took me forever basically its in steps
+this whole thing is the path for the right pincer first you define the shape which i did stupidly with arcs
+then you start there and animate to the next spot, making an infinite loop by using the begin option
+0;animation4.end the dot end or your inital starting point.
+you have to imagine two circles like on a train moving the claw in and out up and down
+the back moves down and forward while the front moves up and forward
+Also you can't change elipse shapes to something else otherwize it won't work
+
+
+                    <path d="M 320,204
+                     a 25,10 0,0,1 80,0
+                     q -8,20 -80,0 z"/>
+-->
+
+                <g id="rightPincer" stroke="blue" stroke-width="4" fill="black">
+                    
+                     <path d="M310,215
+                     q 45,-45 74,-30
+                     q 10,30 -74,30 z">
+                    
+                     
+
+                     <animate id="animation1"
+                       attributeName="d"
+                       attributeType="XML"
+                       from="M 325,185
+                     q 75,-25 77,20
+                     q -8,20 -77,-20 z"
+                       to="M 310,225
+                     q 45,-45 74,-30
+                     q 10,30 -74,30  z" 
+                       begin="0;animation3.end" dur="1.5s"
+                       />
+
+                       <animate id="animation2"
+                       attributeName="d"
+                       attributeType="XML"
+                        begin="animation1.end"
+                        from="M 310,225
+                       q 45,-45 74,-30
+                        q 10,30 -74,30  z"
+                       to="M 327,218
+                        q 45,-45 74,-30
+                       q 10,30 -74,30  z"
+                       dur="1s" />
+
+                       <animate id="animation3"
+                       attributeName="d"
+                       attributeType="XML"
+                        begin="animation2.end"
+                        from="M 327,218
+                     q 45,-45 74,-30
+                     q 10,30 -74,30 z"
+                       to="M 325,185
+                     q 75,-25 77,20
+                     q -8,20 -77,-20 z"
+                       dur="1s" />
+
+                  
+
+               
+                     
+                   </path>
+                </g>
+
+
+                   <!-- this is the left pincer-->
+                   <!-- this is the left pincer-->
+                   <!-- this is the left pincer-->
+                   <!-- this is the left pincer-->
+                   <!-- this is the left pincer-->
+                   <!-- this is the left pincer-->
+              <!--
+                <g id="leftPincer" stroke="blue" stroke-width="4" fill="black">
+                 <path d="M 215,208
+                     q 20,-30 79,10
+                     q-85,20 -79,-10 z"/>
+    
+            </g>
+
+    -->
+
+            <g id="leftPincer" stroke="blue" stroke-width="4" fill="black">
+                <path d="M 198,208
+                     q 10,-30 77,20
+                     q-80,10 -77,-20 z">
+                
+                 
+
+                 <animate id="animation1b"
+                   attributeName="d"
+                   attributeType="XML"
+                   from="M 198,208
+                     q 10,-30 77,20
+                     q-80,10 -77,-20 z"
+                   to="M 203, 195
+                   q -15,-30 77,-20
+                   q -40,40 -77,20 z" 
+                   begin="0;animation3b.end" dur="1s"
+                   />
+
+                   <animate id="animation2b"
+                   attributeName="d"
+                   attributeType="XML"
+                    begin="animation1b.end"
+                    from="M 203,195
+                    q -15,-30 77,-20 
+                    q -40,40 -77,20 z"
+                   to="M 215,208
+                     q 20,-30 79,10
+                     q-85,20 -79,-10 z"
+                   dur="1.5s" />
+
+                   <animate id="animation3b"
+                   attributeName="d"
+                   attributeType="XML"
+                    begin="animation2b.end"
+                    from="M215,208
+                     q 20,-30 79,10
+                     q-85,20 -79,-10 z"
+                   to=" M 198,208
+                     q 10,-30 77,20
+                     q-80,10 -77,-20z"
+                   dur="1s" />
+
+                   
+                 
+               </path>
+
+    </svg>
+<div id="searchform">
+    <label>
+        <input type="text" value='what are you looking for?' name="searchterm" />
+        
+    </label>
+    <button id="searchButton" class="button" type="button" onclick="buildWeb()" >Send</button>
+
+  
+</form>
+</div>
+<div id="container">
+    
+    
+</div>
+</body>
+</html>
