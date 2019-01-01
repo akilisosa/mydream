@@ -1,0 +1,19 @@
+h1 {
+  
+    text-align: center;
+    background-color: aqua;
+    margin:auto;
+}
+h2 {
+    position:relative;
+    text-align: center;
+}
+
+.theQueryClass{
+    position:relative;
+    text-align:center;
+}
+
+.theWholeThing{
+    margin:auto;
+}
